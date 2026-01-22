@@ -12,21 +12,21 @@ The project follows a **layered architecture** to ensure scalability, maintainab
 
 ## Frontend Architecture
 
-  UI Components
-  ↓
-  Custom Hooks (useNotes, useTasks)
-  ↓
-  API Layer (axios + api files)
-  ↓
-  Backend REST APIs
+    UI Components
+    ↓
+    Custom Hooks (useNotes, useTasks)
+    ↓
+    API Layer (axios + api files)
+    ↓
+    Backend REST APIs
 
 ## Backend Architecture
 
-  Routes
-  ↓
-  Controllers
-  ↓
-  Mongoose Models
+    Routes
+    ↓
+    Controllers
+    ↓
+    Mongoose Models
 
 ## Key Principles
 - Single Responsibility
