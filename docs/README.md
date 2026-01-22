@@ -1,4 +1,4 @@
-# PrimeTrade - Productivity Dashboard (MERN Stack)
+# PrimeTrade (MERN Stack)
 
 A full-stack productivity dashboard built using the MERN stack that allows users to manage **notes** and **tasks** efficiently with authentication, protected routes, and a clean, scalable architecture.
 
