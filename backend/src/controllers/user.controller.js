@@ -92,6 +92,8 @@ const loginUser = asyncHandler(async (req, res) => {
   const loggedInuser = await User.findById(user._id).select(
     "-password -refreshToken"
   );
+  console.log("User logged in:", user.email);
+
 
   const options = {
     httpOnly: true,
@@ -114,6 +116,7 @@ const loginUser = asyncHandler(async (req, res) => {
 const logoutUser = asyncHandler(async (req, res) => {
   await User.findByIdAndUpdate(
     req.user._id,
+
     {
       $set: {
         refreshToken: undefined
@@ -122,6 +125,8 @@ const logoutUser = asyncHandler(async (req, res) => {
     new: true,
   }
   );
+  console.log("User logged out:", req.user._id);
+
 
   const options = {
     httpOnly: true,

@@ -16,6 +16,8 @@ const createNote = asyncHandler(async (req, res) => {
         isPinned: isPinned || false,
         owner: req.user._id
     });
+    console.log("Note created:", note._id);
+
 
     return res.status(201).json(
         new ApiResponse(200, note, "Note created successfully")

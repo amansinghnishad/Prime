@@ -16,6 +16,8 @@ const createTask = asyncHandler(async (req, res) => {
         status: status || "pending",
         owner: req.user._id
     });
+    console.log("Task created:", task._id);
+
 
     return res.status(201).json(
         new ApiResponse(200, task, "Task created successfully")
